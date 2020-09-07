@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<head>
+  <link href="/normalize.css" rel="stylesheet">
+  <style>
+    header {
+      text-align: center;
+      background: url('https://fastcode.space/wp-content/uploads/2017/03/3-4.jpeg');
+      background-size: cover;
+      font-size: 42px;
+    }
+    a {
+      color: white;
+    }
+
+    }
+    h1 {
+      font-size: 70px;
+      color:black;
+    }
+    h2 {
+        color: black;
+    }
+    }
+    img {
+      margin: 40px 0px 0px 0px;
+      border: 7px solid white;
+      border-radius: 20px;
+    }
+    ul {
+      padding: 10px;
+      background: rgba(0,0,0,0.5);
+    }
+    li {
+      display: inline;
+      padding: 30px 30px 30px 30px;
+    }
+    article {
+      max-width: 1500px;
+      padding: 20px;
+      margin: 0 auto;
+      text-decoration-color: black;
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+        
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="http://i.imgur.com/0QpWktf.png" border-radius: 50%>
+    <h1 style="color: gold">Sannan's Blog </h1>
+    <ul>
+      <li><a href="http://www.linkedin.com/in/sannanijaz/">LinkedIn</a></li>
+      <li><a href="http://www.facebook.com/sannan.ijaz">Facebook</a></li>
+      <li><a href="http://www.instagram.com/sannan123/?hl=en">Instagram</a></li>
+    </ul>
+  </header>
+  <article>
+   <u><h2><a href="http://developingchild.harvard.edu/resources/how-to-help-families-and-staff-build-resilience-during-the-covid-19-outbreak/" style="color:black;">Resilience in these times</a></h2></u> 
+    <p>As we all know, these times are unexpected. I, for one, have been unable to function normally. I found this great post by harvard.edu around how to deal with the stress and go towards positivity. Have a look!!!</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <u><h2><a href="http://www.youtube.com/channel/UCcocoUo7dEbHvXGccknJfNg" style="color: black"> Paco Versailles</a></h2></u>
+    <p>Edgy tunes, Fusion between musical instruments, pretty Visuals and some sexy Gentlemen!! check out their Youtube page. They are on my daily listening list</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <u><h2><a href="http://www.youtube.com/watch?v=V5yIlA6g_9o" style="color: black">Cyberpunk 2077</a></h2></u>
+    <p>Staying indoors in Melbourne has forced a lot of people into staying in. What better way than to play video games, and one of the biggest games of the decade is soon to come out. Neo-Noir setup with Blade Runner like feels. Nothing less than great will come out of Cyberpunk 2077 </p>
+    <button>Like</button>
+  </article>
+  <script>
+    $("button").on("click", function() {
+      alert("Clicked!");
+    });
+  </script>
+</body>

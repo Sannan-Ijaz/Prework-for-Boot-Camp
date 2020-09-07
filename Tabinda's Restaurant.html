@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<head>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"> </script>
+<script src="https://imgur.com/a/jQLUDL4"></script>
+<link href='https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet' rel='stylesheet' type='text/css'>
+<style>
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background: #232323;
+}
+div {
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  margin: 80px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  font-size: 75px;
+  color: #aaaaaa;
+  margin: 60px 0 0 0;
+}
+h2 {
+  text-align: center;
+  color: #bbbbbb;
+  margin: 0px 0 70px 0;
+}
+p {
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+small {
+  opacity: 0;
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.price {
+  float: right;
+}
+.first {
+  background-image: url("https://imgur.com/6AuygDZ.png");
+}
+.second {
+  background: url("https://imgur.com/il7zxvc.png");
+}
+.dessert {
+  background: url("https://imgur.com/Sp0o2pn.png");
+}
+.bcs {
+  background: url("https://imgur.com/TdfMKVe.png");
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+<h1>Tabinda's</h1>
+<h2>A Lahore city eatery</h2>
+<div class="first">
+  <p>Chocolate Cake <span class="price">$100</span><br />
+  <small>Chocolate Cake with Black Forrest topping. Very Yummy and good for Birthdays and general occassions where guests are over. </small></p>
+</div>
+
+<div class="second">
+  <p>Strawberry Cake<span class="price">$100</span><br />
+  <small>Strawberry cake made with real strawberries and flavoured with vegan strawberry flavourings. Very good for Birthdays and general.</small></p>
+</div>
+  
+<div class="dessert">
+  <p> Ferrero Rocher Cake <span class="price">$100</span><br />
+  <small>Lollipop tart cotton candy jelly-o carrot cake apple pie cupcake. Jelly-o bear claw ice cream candy canes.</small></p>
+</div>
+
+<div class="bcs">
+  <p> Buttercream Swirl Cupcakes <span class="price">$100</span><br />
+  <small>Classic buttercream swirls in pastel hues with a little bit of silver sparkle always adds magic to our perfect sweet treats.</small></p>
+</div>
+
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+</body>
